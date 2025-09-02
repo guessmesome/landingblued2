@@ -3,7 +3,7 @@ const totalSlides = 3;
 
 // Check if user has visited before
 function checkReturnVisitor() {
-    const hasVisited = localStorage.getItem('footFetishVisited');
+    const hasVisited = localStorage.getItem('bluedVisited');
     
     if (hasVisited) {
         // User has visited before, redirect immediately
@@ -16,7 +16,7 @@ function checkReturnVisitor() {
 
 // Mark user as visited
 function markAsVisited() {
-    localStorage.setItem('bluedVisited', 'true');
+    localStorage.setItem('bluedVisited', 'true'); // This is a string value
     localStorage.setItem('bluedVisitTime', new Date().getTime());
 }
 
